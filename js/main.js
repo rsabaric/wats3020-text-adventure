@@ -1,4 +1,5 @@
 /* JS for WATS 3020 Text Adventure */
+// Rosie Sabaric//
 let playerName = "";
 let choiceList = [];
 let currentPage = null;
