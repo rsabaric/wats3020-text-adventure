@@ -11,7 +11,7 @@ button#undo {
 }
 button#undo:hover {
     border: none;
-    background: #333;
+    background: #20B2AA;
     color: #fff;
 }
 #choices {
@@ -29,7 +29,7 @@ button#undo:hover {
     margin: 1rem 0;
 }
 #choices li:hover {
-    background: #333;
+    background: #20B2AA;
     color: #fff;
 }
 
