@@ -26,7 +26,7 @@ function getCurrentPage (slug){
 // parameter and add it to the `choiceList` Array (probably using `push()`).
 function recordChoice (slug){
     choiceList.push(slug);
-    console.log('Added ${slug} to choiceLise Array.');
+    console.log('Added ${slug} to choiceList Array.');
 }
 
 
@@ -36,7 +36,7 @@ function recordChoice (slug){
 function undoChoice(){
     choiceList.pop();//Remove the last item in the 'choiceList' Array
     console.log('Returning to previous page.');
-    return choiceList[choiceList.Length=1];
+    return choiceList[choiceList.Length-1];
 }
 
 
