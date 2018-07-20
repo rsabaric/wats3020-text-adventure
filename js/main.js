@@ -128,6 +128,9 @@ var storyData = {
             }, {
                 text: `Fly directly at the cat, full steam ahead!`,
                 link: 'p4'
+            }, {
+                text: `Offer the cat some wine from your wine flask!`,
+                link: 'wineEnd'
             }
         ]
     },
@@ -135,6 +138,18 @@ var storyData = {
         text: `You fly directly into a picnic basket, which slams shut behind you.
                 You are stuck until some kind human comes to open the basket.
                 But at least the cat didn't eat you!
+                <br><br>
+                The End`,
+        choices: [
+            {
+                text: `Start over?`,
+                link: 'p1'
+            }
+        ]
+    },
+    wineEnd : {
+        text: `You and the cat get very drunk and are happy. All of the cheese and wine are gone.
+                 The cat is happy you didn't think he would eat you because he doesn't have any friends!
                 <br><br>
                 The End`,
         choices: [
