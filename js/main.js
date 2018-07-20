@@ -3,6 +3,7 @@
 let playerName = "";
 let choiceList = [];
 let currentPage = null;
+let foxName = "";
 
 ///////////////////////////////////////////////////
 //////// TODOs ///////////////////////////////////
@@ -12,6 +13,7 @@ let currentPage = null;
 
 // TODO: Prompt the user for their name. Store the name in the variable `playerName`.
 playerName = prompt ("What is your name?");
+foxName = prompt ("What was your first grade teachers name?");
 
 // TODO: Create a function called `getCurrentPage()`. It should accept one
 // parameter, which is the `slug` for the current page. This function will fetch
@@ -160,22 +162,22 @@ var storyData = {
                 full of wildflowers. You decide this will be a wonderful place
                 to have a snack.
                 <br><br>
-                Just as you settle down you see Mr. Fox strolling down the path
-                towards your fence post.`,
+                Just as you settle down you see a fox strolling down the path
+                towards your fence post. The fox introduces themselves as ${foxName}`,
         choices: [
             {
-                text: `Say, "Hello Mr. Fox! Join me for cheese."`,
+                text: `Say, "Hello ${foxName}! Join me for cheese."`,
                 link: 'shareCheese'
             }, {
-                text: `Keep a wary eye on Mr. Fox.`,
+                text: `Keep a wary eye on ${foxName}.`,
                 link: 'p6'
             }
         ]
     },
     shareCheese : {
-        text: `You hop down to the ground and Mr. Fox helps you break the cheese
-                in half. He is very grateful to you for sharing your cheese, and
-                he gives you a lovely ribbon for your nest.
+        text: `You hop down to the ground and ${foxName} helps you break the cheese
+                in half. ${foxName} is very grateful to you for sharing your cheese, and
+                gives you a shiny,sparkly secret trinket for your nest.
                 <br><br>
                 The End`,
         choices: [
@@ -186,12 +188,12 @@ var storyData = {
         ]
     },
     p6 : {
-        text: `Mr. Fox approaches and says, "Hello ${playerName}! It's been so
+        text: `${foxName} approaches and says, "Hello ${playerName}! It's been so
                 long since we've seen each other. I've missed hearing your
-                lovely singing voice. Won't you sing me a tune before I go?`,
+                great whistle. Won't you whistle me a jingle before I go?`,
         choices: [
             {
-                text: `Sing a song for Mr. Fox.`,
+                text: `Whistle a little jingle for ${foxName}.`,
                 link: 'dropCheeseEnd'
             }, {
                 text: `Remain silent.`,
@@ -200,9 +202,9 @@ var storyData = {
         ]
     },
     dropCheeseEnd : {
-        text: `You open your beak to sing a lovely song, and your cheese comes
-                tumbling out. Mr. Fox quickly snaps the cheese out of the air
-                as it falls and gobbles it up!
+        text: `You open your beak to whistle a little jingle, and your cheese comes
+                tumbling out. ${foxName} quickly snaps the cheese out of the air
+                as it falls and gobbles it up! ${foxName} yells, "I AM SORRY! I CAN'T CONTROL MYSELF!"
                 <br><br>
                 The End`,
         choices: [
@@ -213,8 +215,8 @@ var storyData = {
         ]
     },
     p7 : {
-        text: `You remain silent through all of Mr. Fox's flattery. In the end,
-                he knows you won't fall for his tricks, and he leaves you alone.
+        text: `You remain silent through all of ${foxName}'s flattery. In the end,
+                ${foxName} knows you won't fall for their tricks, and decides to leaves you alone.
                 <br><br>
                 Finally able to relax in quiet, you enjoy your well-earned
                 cheese.
