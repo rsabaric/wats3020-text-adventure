@@ -38,9 +38,9 @@ function recordChoice (slug){
 function undoChoice(){
     choiceList.pop();//Remove the last item in the 'choiceList' Array
     console.log('Returning to previous page.');
-    //console.log(choiceList[choiceList.length-1]);
     return choiceList[choiceList.length-1];
 }
+
 
 
 // TODO: Create a function called `changePage()` that accepts a parameter called
