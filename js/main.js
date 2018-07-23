@@ -5,17 +5,12 @@ let choiceList = [];
 let currentPage = null;
 let foxName = "";
 
-///////////////////////////////////////////////////
-//////// TODOs ///////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
-// Fill in the blanks below to complete each TODO task.                       //
-////////////////////////////////////////////////////////////////////////////////
 
-// TODO: Prompt the user for their name. Store the name in the variable `playerName`.
+// Prompt the user for their name and fox name. Store the name in the variables `playerName` and foxName.
 playerName = prompt ("What is your name?");
-foxName = prompt ("What was your first grade teachers name?");
+foxName = prompt ("What was your first grade teacher's name?");
 
-// TODO: Create a function called `getCurrentPage()`. It should accept one
+// Created a function called `getCurrentPage()`. Accepts one
 // parameter, which is the `slug` for the current page. This function will fetch
 // the current page and return a page object using the `slug` value for a key.
 function getCurrentPage (slug){
@@ -24,7 +19,7 @@ function getCurrentPage (slug){
 }
 
 
-// TODO: Create a function called `recordChoice()` that will accept a `slug`
+// Created a function called `recordChoice()` that accepts a `slug`
 // parameter and add it to the `choiceList` Array (probably using `push()`).
 function recordChoice (slug){
     choiceList.push(slug);
@@ -32,7 +27,7 @@ function recordChoice (slug){
 }
 
 
-// TODO: Create a function called `undoChoice()` that will remove the last
+// Created a function called `undoChoice()` that removes the last
 // `slug` in the `choiceList` Array and then will return the last `slug` in the
 // `choiceList` Array.
 function undoChoice(){
@@ -43,7 +38,7 @@ function undoChoice(){
 
 
 
-// TODO: Create a function called `changePage()` that accepts a parameter called
+// Created a function called `changePage()` that accepts a parameter called
 // `slug` and which handles "turning the page" in three steps:
 //  1. It should call the `recordChoice()` function (and give it the `slug` as
 //     a parameter.
@@ -61,10 +56,7 @@ function changePage(slug){
 
 ///////////////////////////////////////////////////
 //////// Story Data //////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
-// Only edit this data to change/enhance the story. Be sure to watch for how  //
-// changes to the story data might affect the mechanisms that output the      //
-// story.                                                                     //
+                                                                   
 ////////////////////////////////////////////////////////////////////////////////
 // NOTE: The data below is organized as a JS Object. The content for each     //
 // page is stored using a "slug" -- a short alphanumeric identifier (for      //
